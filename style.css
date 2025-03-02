@@ -1,0 +1,549 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+header{
+  height: 100vh;
+  border-bottom: 2px solid white;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: ease-in 0.4s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: space-around;
+  background-color:transparent;
+  cursor: pointer;
+  transition: ease-in .3s ;
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10%;
+  background-color: white;
+  border-radius: 20px ;
+  height: 80px;
+}
+
+.btn {
+  padding: 15px 15px;
+  border-radius: 10px;
+  border-style: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.title p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 32px;
+  color: black;
+  margin-left: 50px;
+  text-shadow: 2px 2px 5px rgb(150, 137, 137);
+}
+
+.links ul{
+  list-style-type: none;
+  display: flex;
+  width: 600px;
+  justify-content: space-evenly;
+  margin-right: 50px;
+}
+
+.links ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: ease-in 0.4s;
+}
+.links li a:hover {
+  border-bottom: 2px solid orangered;
+  transition: color 0.3s ease-in-out;
+  color: orange;
+}
+
+section#home {
+  color: white;
+  margin: 0 10%;
+  display: flex;
+  justify-content: flex-start;
+  height: 450px;
+}
+.perfume {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.perfume img{
+  height: 400px;
+  width: 600px;
+  z-index: -1;
+  margin-top: 50px;
+}
+.fronttext {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+.fronttext span {
+  color: white;
+}
+
+.fronttext h1 {
+  font-size: 55px;
+  text-shadow: 2px 2px 5px rgb(235, 230, 230);
+}
+.fronttext p{
+  font-size: 20px;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+.btns {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.primary-btn {
+  color: white;
+  background-color: orangered;
+  transition: ease-in 0.4s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: orangered;
+  text-shadow: 2px 2px 5px rgb(20, 18, 14);
+}
+.primary-btn:hover {
+  color: orangered;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  transition: ease-in 0.4s;
+  text-shadow: 2px 2px 5px rgb(255, 181, 43);
+}
+
+
+.secondary-btn {
+  color: white;
+  border-style: solid;
+  border-color: white;
+  margin-left: 50px;
+  border-style: solid;
+  border-width: 1px;
+  text-shadow: 2px 2px 5px rgb(20, 18, 14);
+}
+.secondary-btn:hover {
+  color: orangered;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: coral;
+  transition: ease-in 0.4s;
+  text-shadow: 2px 2px 5px rgb(255, 181, 43);
+}
+#aboutus{
+  display: flex;
+  height: 120vh;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+.about {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.about img{
+  height: 400px;
+  width: 600px;
+  z-index: -1;
+  margin-top: 50px;
+}
+.about-title{
+  font-weight: bold;
+  font-style: normal;
+  font-size: 60px;
+  color: white;
+  padding-top: 50px;
+  padding-left: 300px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(235, 230, 230);
+}
+.aboutcontainer{
+  display: flex;
+}
+.wordings p{
+  font-weight: bolder;
+  font-size: 22px;
+  color: white;
+  padding: 100px 30px 0px 30px;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+.primary-btns {
+  height: 50px;
+  width: fit-content;
+  margin-left: 800px;
+  color: white;
+  background-color: orangered;
+  transition: ease-in 0.4s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: orangered;
+  display: flex;
+}
+.primary-btns:hover {
+  color: orangered;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  transition: ease-in 0.4s;
+}
+#fragrance{
+  color: whitesmoke;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTL35PzCVs26GOGOkhDsZkPc7HLCa2SeAPOQ&s);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+}
+#images{
+  height: 400px;
+  width: 400px;
+  margin-top: 88px;
+}
+.dropdown {
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  flex-direction: column;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-left: 17px;
+}
+.dropdown-content img{
+  height: 200px;
+  width: 300px;
+}
+details summary{
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 25px;
+  outline: none;
+  list-style: none;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+details summary:hover {
+  color: orangered;
+}
+.fragrance-container {
+  display: flex;
+}
+.dropdown-content {
+  margin-top: 15px;
+  padding-left: 80px;
+}
+.description {
+  padding-left: 60px;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+#buy{
+  height: 200vh;
+}
+.titles{
+  color: white;
+  font-weight: bold;
+font-style: normal;
+font-size: 60px;
+padding-top: 75px;
+text-align: center;
+justify-content: center;
+text-shadow: 2px 2px 5px rgb(235, 230, 230);
+}
+.box1{
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  display: inline-block;
+  width: 200px;
+  height: 270px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.box2{
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  display: inline-block;
+  width: 200px;
+  height: 270px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.box3{
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  display: inline-block;
+  width: 200px;
+  height: 270px;
+  margin-left: 100px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.box4{
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  display: inline-block;
+  width: 200px;
+  height: 270px;
+  margin-left: 30px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.box1:hover
+{
+  background-color: black;
+  color: white;
+}
+.box2:hover
+{
+  background-color: black;
+  color: white;
+}
+.box3:hover
+{
+  background-color: black;
+  color: white;
+}
+.box4:hover
+{
+  background-color: black;
+  color: white;
+}
+.product{
+  height: 100vh;
+  padding-top: 70px;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+.box1 img{
+  height: 145px;
+  width: 196px;
+}
+.box2 img{
+  height: 145px;
+  width: 196px;
+}
+.box3 img{
+  height: 145px;
+  width: 196px;
+}
+.box4 img{
+  height: 145px;
+  width: 196px;
+}
+.cart a{
+  height: 20px;
+  width: 108px;
+  background-color: white;
+  color: black;
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.brand{
+  padding-top: 5px;
+  text-align: center;
+}
+.head {
+  font-size: 45px;
+  padding-left: 315px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 5px rgb(235, 230, 230);
+}
+
+/* Form Styles */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-left: 200px;
+}
+.form-container {
+display: flex;
+}
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+input:focus {
+  outline: none;
+  border-color: #76c7c0;
+  box-shadow: 0 0 5px rgba(118, 199, 192, 0.5);
+}
+#contactus {
+  color: whitesmoke;
+  background: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 157vh;
+  width: auto;
+}
+.contact-container {
+  text-align: center;
+}
+.contact-info {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.info-item h2 {
+  color: orangered;
+}
+
+.info-item p {
+  margin: 0;
+  color: white;
+}
+.info-item i {
+  font-size: 24px;
+  color: orange;
+}
+.info-item a {
+  text-decoration: none !important;
+  color: whitesmoke;
+  padding-top: 5px;
+}
+
+.info-item a:hover {
+  text-decoration: underline !important;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  color: whitesmoke;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: #76c7c0;
+  box-shadow: 0 0 5px rgba(118, 199, 192, 0.5);
+}
+
+.contact-form button {
+  background-color: #76c7c0;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #5da9a3;
+}
+.headings {
+  font-size: 50px;
+  padding-top: 123px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(235, 230, 230);
+}
+#message {
+font-family: "Edu AU VIC WA NT Pre", cursive;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+color: black;
+margin-left: 90px;
+}
+.form {
+  text-align: center;
+  padding-top: 55px;
+  padding-left: 83px;
+}
+.send {
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgb(235, 230, 230);
+}
+#img {
+  height: 510px;
+  width: 500px;
+  margin-top: 55px;
+  background: transparent;
+}
+.contactus-container {
+  display: flex;
+}
+.primarybtn{
+  color: white;
+  background-color: orangered;
+  transition: ease-in 0.4s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: orangered;
+  text-shadow: 2px 2px 5px rgb(20, 18, 14);
+}

@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+nav{
+    display: flex;
+}
+nav img{
+    height: 100px;
+}
+.title{
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+.fogg img{
+    margin-left: 300px;
+}
+.about h1{
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+.about p{
+    color: white;
+    font-size: 23px;
+    padding: 20px 30px 0px 30px;
+}
+.about img{
+    margin-left: 300px;
+}
+.chart{
+    padding-top: 40px;
+}
